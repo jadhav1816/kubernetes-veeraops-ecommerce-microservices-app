@@ -11,7 +11,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
-############################
+#############################
 # VARIABLES
 ############################
 
@@ -70,7 +70,7 @@ resource "aws_subnet" "private2" {
 
   vpc_id            = aws_vpc.eks_vpc.id
   cidr_block        = "10.0.4.0/24"
-  availability_zone = "us-wast-2b"
+  availability_zone = "us-west-2b"
 }
 
 ############################
