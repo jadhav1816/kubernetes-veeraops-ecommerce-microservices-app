@@ -315,7 +315,7 @@ resource "aws_instance" "eks" {
                 yum update -y
 
                 # ----------------------------- Install kubectl -----------------------------
-                curl -o /tmp/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+                curl -o /tmp/kubectl https://amazon-eks.s3.us-east-1.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
                 chmod +x /tmp/kubectl
                 mv /tmp/kubectl /usr/local/bin/kubectl
 
